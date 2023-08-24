@@ -4,40 +4,22 @@ public class Main {
     public static void main(String[] args) {
         // Press Alt+Enter with your caret at the highlighted text to see how
         // IntelliJ IDEA suggests fixing it.
+        int [][] numberGrid = {
+                {5, 10, 15},
+                {20, 25, 30},
+                {35, 40, 45},
+                {50, 55, 60}
 
-        int [] myNumbers = new int[8];
+        };
+        System.out.println( numberGrid[1][2]);
 
-        myNumbers[0] = 1;
-        myNumbers[1] = 3;
-        myNumbers[2] = 5;
-        myNumbers[3] = 7;
-        myNumbers[4] = 9;
-        myNumbers[5] = 11;
-        myNumbers[6] = 13;
-        myNumbers[7] = 15;
+        for(int i = 0; i < numberGrid.length; i++) {
 
-        System.out.println("myklhashnumbers[0] = " + myNumbers[3] );
-
-        for (int i = 0; i < 8; i++ ) {
-
-            System.out.println("myNumbers[" + i + "] is: " + myNumbers[i]);
+            for(int j = 0; j < numberGrid[i].length; j++) {
+                System.out.println(numberGrid[i][j]);
+            }
+            System.out.println();
         }
 
-        // fill the array with 5, 10, 15, etc.
-        int myFiveContainer = 5; 
-        for (int i = 0; i < 8; i++) {
-
-           myNumbers[i] = myFiveContainer += 5;
-        }
-
-        String [] friends = new String[3];
-
-        friends[0] = "Mike";
-        friends[1] = "Karen";
-        friends[2] = "Kevin";
-
-        System.out.println( friends[0]);
-        System.out.println( friends[1]);
-        System.out.println( friends[2]);
         }
     }
